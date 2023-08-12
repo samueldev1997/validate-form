@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <main class="screem">
+
+        <section class="leftside">
+            <img src="img/img3.svg" alt="Imagem do projeto">
+        </section>
+
+        <section class="rightside">
+
+            <h1>Crie uma conta</h1>
+
+            <form class="validator">
+                <label>
+                    Seu nome: <br>
+                    <input type="text" name="nome" data-rules="required|min=2">
+                </label> 
+
+                <label>
+                    Seu e-mail: <br>
+                    <input type="text" name="email" data-rules="required|email">
+                </label> 
+
+                <label>
+                    Sua senha: <br>
+                    <input type="password" name="password" data-rules="required|min=4">
+                </label> 
+
+                <button>Cadastrar</button>
+            </form>
+
+            <div>
+                Já tem uma conta? <a href="">Faça o login</a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
